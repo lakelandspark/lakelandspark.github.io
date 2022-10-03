@@ -1,0 +1,128 @@
+<!--
+
+ __    __   _______  __       __        ______   
+|  |  |  | |   ____||  |     |  |      /  __  \  
+|  |__|  | |  |__   |  |     |  |     |  |  |  | 
+|   __   | |   __|  |  |     |  |     |  |  |  | 
+|  |  |  | |  |____ |  `----.|  `----.|  `--'  | 
+|__|  |__| |_______||_______||_______| \______/                                                  
+
+Hey, thanks for looking at the code for this website. If you could share this with your friends that would be cool. KTHXBYE
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="https://cdn.scaledrone.com/scaledrone.min.js"></script>
+  <!--<script type='text/javascript' src='http://0.0.0.0:8080/scaledrone.js'></script>-->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 13px;
+      display: flex;
+      flex-direction: column;
+      max-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    .members-count,
+    .members-list,
+    .messages {
+      margin-bottom: 15px;
+      border: 1px solid #282a36;
+      padding: 15px;
+      color: #f1f1f0;
+    }
+
+    .messages {
+      flex-shrink: 1;
+      overflow: auto;
+      height: 1000px;
+      color: #f1f1f0;
+    }
+
+    .message {
+      padding: 5px 0;
+    }
+
+    .message .member {
+      display: inline-block;
+    }
+
+    .member {
+      position: relative;
+      padding-right: 10px;
+    }
+
+    .message-form {
+      display: flex;
+      flex-shrink: 0;
+    }
+
+    .message-form__input {
+      flex-grow: 1;
+      border: 1px solid #282a36;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+    }
+
+    .message-form__button {
+      margin: 10px;
+      height: 37.5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #44475a;
+      color: #a0a2ab;
+      transition: 0.3s;
+    }
+
+    .message-form__button:hover {
+      background-color: #57c7ff;
+      color: #f1f1f0;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="chat.html">Chat</a>
+      </li>
+      <li>
+        <a href="games.html">Games</a>
+      </li>
+      <li>
+        <a href="aboutus.html">About Us</a>
+      </li>
+    </ul>
+  </nav>
+  <h1 class="chattitle">
+    Chat
+  </h1>
+  <div class="members-count">-</div>
+  <div class="members-list">-</div>
+  <div class="messages"></div>
+  <form class="message-form" onsubmit="return false;">
+    <input class="message-form__input" placeholder="Type a message.." type="text" />
+  </form>
+  <div id="namebackground">
+    <div class="namebackgrounditems">
+      <input type="text" placeholder="Enter your name..." class="message-form__input" id="nameinput" />
+      <input type="submit" value="Enter Chat" onclick="startChat();" class="message-form__button" id="enterbutton" />
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>

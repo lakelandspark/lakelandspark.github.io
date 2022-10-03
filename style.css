@@ -1,0 +1,254 @@
+/*
+
+ __    __   _______  __       __        ______   
+|  |  |  | |   ____||  |     |  |      /  __  \  
+|  |__|  | |  |__   |  |     |  |     |  |  |  | 
+|   __   | |   __|  |  |     |  |     |  |  |  | 
+|  |  |  | |  |____ |  `----.|  `----.|  `--'  | 
+|__|  |__| |_______||_______||_______| \______/                                                  
+
+Hey, thanks for looking at the code for this website. If you could share this with your friends that would be cool. KTHXBYE
+
+*/
+
+@font-face {
+  font-family: OpenSans;
+  src: url(Resources/OpenSans-Regular.ttf);
+}
+
+body {
+  background-color: #282a36;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  display: inline-flex;
+}
+
+nav ul li a {
+  font-family: OpenSans;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  color: #f3f99d;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: #f1f1f0;
+}
+
+.headertext {
+  text-align: center;
+  font-family: OpenSans;
+}
+
+.titletext {
+  display: inline-flex;
+}
+
+h1 {
+  font-size: 48px;
+  color: #57c7ff;
+}
+
+#lpmsimage {
+  margin-left: 15px;
+  align-self: center;
+}
+
+h2 {
+  font-size: 36px;
+  background: linear-gradient(to right, #7474bf, #348ac7);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+a {
+  color: #f1f1f0;
+  transition: 0.2s;
+}
+
+a:hover {
+  color: #9aedfe;
+}
+
+.postscript {
+  font-size: 36px;
+  color: #ff5c57;
+}
+
+h3 {
+  font-size: 24px;
+  color: #5af78e;
+}
+
+.homebuttons {
+  align-content: center;
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  margin-right: 10%;
+  width: 20%;
+  height: 15%;
+  border: none;
+  border-radius: 10px;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-family: OpenSans;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #282a36;
+  color: #ff6ac1;
+  border-color: #282a36;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #ff6ac1;
+  color: #f1f1f0;
+}
+
+footer {
+  margin-top: 20%;
+}
+
+.footertext {
+  color: #ff5c57;
+  font-family: OpenSans;
+}
+
+h5 {
+  font-size: 24px;
+  color: #5af78e;
+  font-family: OpenSans;
+  text-align: center;
+}
+
+.gamerow {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.gamerow li {
+  margin-right: 5px;
+}
+
+.gamerow li:first-child {
+  margin-left: 5%;
+}
+
+.dsrow {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.dsrow li {
+  margin-right: 5px;
+}
+
+.dsrow li:first-child {
+  margin-left: 3px;
+}
+
+.n64row {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.n64row li {
+  margin-right: 5px;
+}
+
+.n64row li:first-child {
+  margin-left: 3px;
+}
+
+.gbarow {
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.gbarow li {
+  margin-right: 5px;
+}
+
+.gbarow li:first-child {
+  margin-left: 3px;
+}
+
+.meme {
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.caterpillar {
+  display: flex;
+  justify-content: center;
+}
+
+.chattitle {
+  font-size: 48px;
+  color: #57c7ff;
+  text-align: center;
+}
+
+input[type="text"] {
+  background-color: #282a36;
+  color: #f1f1f0;
+}
+
+#namebackground {
+  position: absolute;
+  display: flex;
+  margin-top: 12.5%;
+  height: 75%;
+  width: 98%;
+  background-color: #282a36;
+  justify-content: center;
+}
+
+.namebackgrounditems {
+  position: absolute;
+  top: 30%;
+}
+
+#name {
+  background-color: #44475a;
+}
+
+ol li {
+  text-align: left;
+  font-size: 24px;
+  color: #5af78e;
+}
+
+.howtoimage {
+  display: flex;
+  justify-content: center;
+}
+
+#howtobutton {
+  margin-right: 40%;
+}
